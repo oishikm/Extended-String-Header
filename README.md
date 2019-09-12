@@ -5,3 +5,5 @@ Includes:
 1. String slicing
 2. String splitting
 3. String trimming
+
+Along with classical string.h functions, of course.
