@@ -1,5 +1,4 @@
 # Extended-String-Header
-[stringext.h]
 Extended string header file for C/C++.
 
 Includes:
