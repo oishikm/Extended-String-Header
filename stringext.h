@@ -12,6 +12,9 @@
 #include<stdlib.h>
 #endif
 
+#ifndef _STRINGEXT_H_
+#define _STRINGEXT_H_
+
 char *strslice(char* instr, int start, int end) {
     /*
      * Returns substring from instr[start] to instr[end-1]
@@ -64,7 +67,7 @@ char **strsplit(char* instr, char token) {
     return outstr;
 }
 
-void strtrim(char* instr) {
+void strstrip(char* instr) {
     /*
      * Trims starting and trailing whitespace in passed string.
      */
@@ -79,3 +82,5 @@ void strtrim(char* instr) {
         ;
     instr[i+1] = '\0';
 }
+
+#endif /* _STRINGEXT_H_ */
