@@ -53,7 +53,7 @@ char **strsplit(char* instr, char token) {
     }
 
     char** outstr = (char **)malloc(count * sizeof(char *));
-    for(i=0; i<=count; i++) {
+    for(i=0; i<count; i++) {
         outstr[i] = (char *)malloc(maxlen * sizeof(char));    
     }
     outstr[i][0] = '\0';    /* Ending terminator string */
