@@ -53,10 +53,10 @@ char **strsplit(char* instr, char token) {
     }
 
     char** outstr = (char **)malloc(count * sizeof(char *));
-    for(i=0; i<count; i++) {
+    for(i=0; i<=count; i++) {
         outstr[i] = (char *)malloc(maxlen * sizeof(char));    
     }
-    outstr[i][0] = '\0';    /* Ending terminator string */
+    outstr[i-1][0] = '\0';    /* Ending terminator string */
     for(i=0, j=0, start=0; instr[i]!='\0' && j<count; i++) {
         if(instr[i] == token) {
             strcpy(outstr[j++], strslice(instr, start, i));
